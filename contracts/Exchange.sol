@@ -95,7 +95,7 @@ contract Exchange {
         // Update user balance
         tokens[_token][msg.sender] = tokens[_token][msg.sender] - _amount;
 
-        // Emit event
+        // Emit an event
         emit Withdraw(_token, msg.sender, _amount, tokens[_token][msg.sender]);
     }
 
@@ -131,7 +131,7 @@ contract Exchange {
             block.timestamp
         );
 
-        // Emit event
+        // Emit an event
         emit Order(
             orderCount,
             msg.sender,
@@ -156,7 +156,7 @@ contract Exchange {
     	// Cancel the order
     	orderCancelled[_id] = true;
 
-    	// Emit event
+    	// Emit an event
     	emit Cancel(
     		_order.id,
     		msg.sender,
