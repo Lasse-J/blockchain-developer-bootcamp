@@ -110,6 +110,7 @@ contract Exchange {
 
     // ------------------------
     // MAKE & CANCEL ORDERS
+    
     function makeOrder(
         address _tokenGet,
         uint256 _amountGet,
